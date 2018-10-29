@@ -1,0 +1,44 @@
+.search-box-wrapper {
+    margin-top: 0px;
+    padding-top: 13.5px;
+    padding-left: 300px;
+    position: absolute;
+    width:44%;
+    top:0px;
+}
+.overlap {
+    position: relative;
+    background: white;
+    width: 100%;
+    padding: 0 10px 0 32px;
+    color: #333;
+    border-radius: 25px 0px 0px 0px;
+    height: 37px;
+    line-height: 37px;
+    font-size: 14px;
+    
+}
+.searchformInput {
+    color: #333;
+    border: none;
+}
+.searchformButton {
+    position: relative;
+    top: 0;
+    background: #333;
+    color: #fff;
+    transition: all .2s ease-out;
+    height: 37px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 25px;
+    font-size: 14px;
+    border-radius: 0 3px 3px 0 !important;
+}
+.additionalNav
+{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}

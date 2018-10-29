@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Ecommerce Project</span>
+    <div class="col-xs-14 search-box-wrapper">
+      <!-- <input autocomplete="off" name="keyword" type="text" class="searchformInput overlap" > -->
+      <input type="search" class="searchformInput overlap" placeholder="Search products" aria-label="Number" matInput
+        [formControl]="myControl" [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+          {{option}}
+        </mat-option>
+      </mat-autocomplete>
+
+      <button class="searchformButton">
+        <span class="searchTextSpan"><i class="sd-icon sd-icon-search-under-catagory lfloat"></i>Search</span>
+      </button>
+    </div>
+    <div class="additionalNav">
+      <button mat-button>Cart</button>
+      <button mat-flat-button color="accent" [matMenuTriggerFor]="menu">Account</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Login</button>
+        <button mat-menu-item>Settings</button>
+      </mat-menu>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
