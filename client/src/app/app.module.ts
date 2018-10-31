@@ -8,6 +8,7 @@ import { ProductsComponent } from './products/products.component';
 import { NavComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
+import {StarRatingModule} from 'angular-star-rating';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { AppRoutingModule } from './app-routing.module';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StarRatingModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

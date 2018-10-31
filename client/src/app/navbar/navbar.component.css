@@ -1,10 +1,11 @@
 .search-box-wrapper {
     margin-top: 0px;
     padding-top: 13.5px;
-    padding-left: 300px;
+    /* padding-left: 300px; */
     position: absolute;
     width:44%;
     top:0px;
+    right: 400px;
 }
 .overlap {
     position: relative;
@@ -41,4 +42,11 @@
     position: absolute;
     right: 10px;
     top: 10px;
+}
+span{
+    outline: none;
+    cursor: pointer;
+}
+input{
+    outline: none;
 }
