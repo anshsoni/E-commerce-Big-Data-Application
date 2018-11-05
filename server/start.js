@@ -1,7 +1,7 @@
 //import mongoose
 const mongoose =require("mongoose");
-//mongo db connection string 27017 port and data base name products
-const url= "mongodb://localhost:27017/products";
+//mongo db connection string 51293 port and data base name products
+const url= "mongodb://ecommerce-project:ecommerce123@ds151293.mlab.com:51293/ecommerce-project";
 //use mongoose to connecto to the database products
 mongoose.connect(url)
 const db = mongoose.connection;

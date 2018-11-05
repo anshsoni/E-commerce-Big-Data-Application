@@ -1,5 +1,6 @@
 const mongoose =require("mongoose");
 
+
 //define a new schema object i.e model of our the database
 const Schema=mongoose.Schema;
 const ModelSchema = new Schema({
@@ -10,7 +11,8 @@ description:String,
 stars:Number,
 category:String,
 img_url:String,
-price: Number
+price: Number,
+reviews : Array
 });
 // use mogoose.model to create a copy of schema for crud operations in node
 const Product=mongoose.model('products',ModelSchema);

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
@@ -9,6 +10,7 @@ import { NavComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import {StarRatingModule} from 'angular-star-rating';
+import { HomeConfigService } from './services/homeconfig.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +20,7 @@ import {StarRatingModule} from 'angular-star-rating';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
@@ -25,7 +28,7 @@ import {StarRatingModule} from 'angular-star-rating';
     AppRoutingModule,
     StarRatingModule.forRoot()
   ],
-  providers: [],
+  providers: [HomeConfigService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

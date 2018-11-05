@@ -7,7 +7,15 @@
     "stars": 0,
     "category": "Apparel",
     "img_url": "/img/products/hoodie.jpg",
-    "price": 29.99
+    "price": 29.99,
+    "reviews": [
+      {
+        "name": "",
+        "comment": "",
+        "stars": 5,
+        "date": 1.456067725049e+12
+      }
+    ]
   },
   {
     "_id": 2,
@@ -35,7 +43,27 @@
     "stars": 0,
     "category": "Swag",
     "img_url": "/img/products/stress-ball.jpg",
-    "price": 5.0
+    "price": 5.0,
+    "reviews": [
+      {
+        "name": "Shannon",
+        "comment": "This is so warm and comfortable.",
+        "stars": 2,
+        "date": 1.455800194995e+12
+      },
+      {
+        "name": "Bob",
+        "comment": "Love this.",
+        "stars": 5,
+        "date": 1.455804800769e+12
+      },
+      {
+        "name": "Jorge",
+        "comment": "Brown. It's brown.",
+        "stars": 4,
+        "date": 1.455804825509e+12
+      }
+    ]
   },
   {
     "_id": 4,
@@ -75,7 +103,15 @@
     "stars": 0,
     "category": "Apparel",
     "img_url": "/img/products/white-mongo.jpg",
-    "price": 45.0
+    "price": 45.0,
+    "reviews": [
+      {
+        "name": "Horatio",
+        "comment": "This is a pretty good book",
+        "stars": 4,
+        "date": 1.456086633854e+12
+      }
+    ]
   },
   {
     "_id": 6,
@@ -85,7 +121,15 @@
     "stars": 0,
     "category": "Swag",
     "img_url": "/img/products/brown-bag.jpg",
-    "price": 5.0
+    "price": 5.0,
+    "reviews": [
+      {
+        "name": "Horatio",
+        "comment": "This is a pretty good book",
+        "stars": 4,
+        "date": 1.456086633854e+12
+      }
+    ]
   },
   {
     "_id": 7,
@@ -95,7 +139,15 @@
     "stars": 0,
     "category": "Kitchen",
     "img_url": "/img/products/brown-tumbler.jpg",
-    "price": 9.0
+    "price": 9.0,
+    "reviews": [
+      {
+        "name": "Horatio",
+        "comment": "This is a pretty good book",
+        "stars": 4,
+        "date": 1.456086633854e+12
+      }
+    ]
   },
   {
     "_id": 8,
@@ -105,7 +157,15 @@
     "stars": 0,
     "category": "Office",
     "img_url": "/img/products/green-pen.jpg",
-    "price": 2.0
+    "price": 2.0,
+    "reviews": [
+      {
+        "name": "Horatio",
+        "comment": "This is a pretty good book",
+        "stars": 4,
+        "date": 1.456086633854e+12
+      }
+    ]
   },
   {
     "_id": 9,
@@ -115,7 +175,15 @@
     "stars": 0,
     "category": "Office",
     "img_url": "/img/products/pen.jpg",
-    "price": 2.0
+    "price": 2.0,
+    "reviews": [
+      {
+        "name": "Horatio",
+        "comment": "This is a pretty good book",
+        "stars": 4,
+        "date": 1.456086633854e+12
+      }
+    ]
   },
   {
     "_id": 10,
@@ -125,7 +193,15 @@
     "stars": 0,
     "category": "Apparel",
     "img_url": "/img/products/green-tshirt.jpg",
-    "price": 20.0
+    "price": 20.0,
+    "reviews": [
+      {
+        "name": "Horatio",
+        "comment": "This is a pretty good book",
+        "stars": 4,
+        "date": 1.456086633854e+12
+      }
+    ]
   },
   {
     "_id": 11,
@@ -135,7 +211,15 @@
     "stars": 0,
     "category": "Books",
     "img_url": "/img/products/guide-book.jpg",
-    "price": 20.0
+    "price": 20.0,
+    "reviews": [
+      {
+        "name": "Horatio",
+        "comment": "This is a pretty good book",
+        "stars": 4,
+        "date": 1.456086633854e+12
+      }
+    ]
   },
   {
     "_id": 12,
@@ -145,7 +229,15 @@
     "stars": 0,
     "category": "Stickers",
     "img_url": "/img/products/leaf-sticker.jpg",
-    "price": 1.0
+    "price": 1.0,
+    "reviews": [
+      {
+        "name": "Horatio",
+        "comment": "This is a pretty good book",
+        "stars": 4,
+        "date": 1.456086633854e+12
+      }
+    ]
   },
   {
     "_id": 13,
@@ -173,7 +265,15 @@
     "stars": 0,
     "category": "Electronics",
     "img_url": "/img/products/leaf-usb.jpg",
-    "price": 20.0
+    "price": 20.0,
+    "reviews": [
+      {
+        "name": "Horatio",
+        "comment": "This is a pretty good book",
+        "stars": 4,
+        "date": 1.456086633854e+12
+      }
+    ]
   },
   {
     "_id": 15,
@@ -201,7 +301,15 @@
     "stars": 0,
     "category": "Stickers",
     "img_url": "/img/products/sticker.jpg",
-    "price": 1.0
+    "price": 1.0,
+    "reviews": [
+      {
+        "name": "Horatio",
+        "comment": "This is a pretty good book",
+        "stars": 4,
+        "date": 1.456086633854e+12
+      }
+    ]
   },
   {
     "_id": 17,
@@ -235,7 +343,21 @@
     "stars": 0,
     "category": "Umbrellas",
     "img_url": "/img/products/umbrella.jpg",
-    "price": 21.0
+    "price": 21.0,
+    "reviews": [
+      {
+        "name": "Jaidee",
+        "comment": "This is the best umbrella you will ever use.",
+        "stars": 5,
+        "date": 1.456270097364e+12
+      },
+      {
+        "name": "Shannon",
+        "comment": "Sturdy construction, but a little too big to fit in my bag for work.",
+        "stars": 3,
+        "date": 1.456270240382e+12
+      }
+    ]
   },
   {
     "_id": 19,
@@ -245,7 +367,21 @@
     "stars": 0,
     "category": "Books",
     "img_url": "/img/products/univ-book.jpg",
-    "price": 4.0
+    "price": 4.0,
+    "reviews": [
+      {
+        "name": "Jaidee",
+        "comment": "This is the best umbrella you will ever use.",
+        "stars": 5,
+        "date": 1.456270097364e+12
+      },
+      {
+        "name": "Shannon",
+        "comment": "Sturdy construction, but a little too big to fit in my bag for work.",
+        "stars": 3,
+        "date": 1.456270240382e+12
+      }
+    ]
   },
   {
     "_id": 20,
@@ -255,7 +391,21 @@
     "stars": 0,
     "category": "Apparel",
     "img_url": "/img/products/univ-tshirt.jpg",
-    "price": 45.0
+    "price": 45.0,
+    "reviews": [
+      {
+        "name": "Jaidee",
+        "comment": "This is the best umbrella you will ever use.",
+        "stars": 5,
+        "date": 1.456270097364e+12
+      },
+      {
+        "name": "Shannon",
+        "comment": "Sturdy construction, but a little too big to fit in my bag for work.",
+        "stars": 3,
+        "date": 1.456270240382e+12
+      }
+    ]
   },
   {
     "_id": 21,
@@ -265,7 +415,21 @@
     "stars": 0,
     "category": "Electronics",
     "img_url": "/img/products/leaf-usb.jpg",
-    "price": 40.0
+    "price": 40.0,
+    "reviews": [
+      {
+        "name": "Jaidee",
+        "comment": "This is the best umbrella you will ever use.",
+        "stars": 5,
+        "date": 1.456270097364e+12
+      },
+      {
+        "name": "Shannon",
+        "comment": "Sturdy construction, but a little too big to fit in my bag for work.",
+        "stars": 3,
+        "date": 1.456270240382e+12
+      }
+    ]
   },
   {
     "_id": 22,
@@ -275,7 +439,21 @@
     "stars": 0,
     "category": "Kitchen",
     "img_url": "/img/products/water-bottle.jpg",
-    "price": 23.0
+    "price": 23.0,
+    "reviews": [
+      {
+        "name": "Jaidee",
+        "comment": "This is the best umbrella you will ever use.",
+        "stars": 5,
+        "date": 1.456270097364e+12
+      },
+      {
+        "name": "Shannon",
+        "comment": "Sturdy construction, but a little too big to fit in my bag for work.",
+        "stars": 3,
+        "date": 1.456270240382e+12
+      }
+    ]
   },
   {
     "_id": 23,
@@ -285,6 +463,20 @@
     "stars": 0,
     "category": "Apparel",
     "img_url": "/img/products/wt-shirt.jpg",
-    "price": 22.0
+    "price": 22.0,
+    "reviews": [
+      {
+        "name": "Jaidee",
+        "comment": "This is the best umbrella you will ever use.",
+        "stars": 5,
+        "date": 1.456270097364e+12
+      },
+      {
+        "name": "Shannon",
+        "comment": "Sturdy construction, but a little too big to fit in my bag for work.",
+        "stars": 3,
+        "date": 1.456270240382e+12
+      }
+    ]
   }
 ]

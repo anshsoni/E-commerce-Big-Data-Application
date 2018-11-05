@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { HomeConfigService } from '../services/homeconfig.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private homeConfigService: HomeConfigService) { }
+  private config: any = [];
 
+  showConfig() {
+    this.homeConfigService.getConfig()
+      .subscribe((data: any) => {
+         console.log(data);
+         this.config = data['items'];
+         return this.config;
+        });
+  }
   ngOnInit() {
+    this.showConfig();
   }
 
 }
