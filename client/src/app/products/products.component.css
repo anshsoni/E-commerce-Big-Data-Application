@@ -44,3 +44,8 @@
     flex-wrap: wrap;
       width:20%;
   }
+  .prod-title{
+  font-weight: bold;
+  line-height: 1.2;
+  font-size: 2em;
+  }

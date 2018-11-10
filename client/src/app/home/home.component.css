@@ -25,8 +25,31 @@ img{
 .list-item:hover{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-.detail-title a{
+/* .detail-title{
     text-decoration: none;
+} */
+.detail-title{
+    height: 3rem;
+    overflow: hidden;
+    font-weight: bold;
+    width: 250px;
+    line-height: 1.2;
+}
+
+.detail-title:after {
+    content: "";
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.detail-title div {
+    display: inline-block;
+    display: -webkit-inline-box;
+    max-height: 100%;
+    vertical-align: middle;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 /* .home-container{
     padding: 15px;
@@ -34,4 +57,16 @@ img{
 } */
 .rating{
     justify-content: normal;
+}
+.loader{
+    padding: 300px;
+}
+.detail-discount{
+    display: inline-block;
+    padding: 1px 10px;
+    height: 17px;
+    border-radius: 100px;
+    background: #FF4747;
+    color: #fff;
+    line-height: 15px;
 }

@@ -5,8 +5,12 @@ import { HttpClient } from '@angular/common/http';
 export class HomeConfigService {
     constructor(private http: HttpClient) {
     }
-    configUrl = 'http://localhost:5000/products';
-    getConfig() {
-        return this.http.get<any>(this.configUrl);
+    homeUrl = 'http://localhost:5000/products';
+    getAll() {
+        return this.http.get<any>(this.homeUrl);
+    }
+    getEachItem(id: any) {
+        const productURL = this.homeUrl + '/' + id;
+        return this.http.get<any>(productURL);
     }
 }
