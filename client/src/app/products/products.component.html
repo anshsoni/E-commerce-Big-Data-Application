@@ -2,27 +2,62 @@
   <div class='row'>
     <div class='column'>
       <p class="prod-title">{{ itemDetails.title }}</p>
+      <p class="prod-desc">Product Description</p>
       <p>{{ itemDetails.slogan }}!</p>
+      <p class="prod-desc">Product Details</p>
       <p>{{ itemDetails.description }}</p>
-        <star-rating [rating]="3" [starType]="'icon'" size="large" style=" width: 200px;"></star-rating>
     </div>
     <div class='column'>
-      <img src="//ae01.alicdn.com/kf/HTB1cPz2eXzqK1RjSZFoq6zfcXXaN.jpg_350x350.jpg" style="visibility: visible;">
+      <img src="assets/{{itemDetails.img_url}}" style="visibility: visible;width: 350px;">
     </div>
   </div>
 </div>
 <div class=" product-container product-price-container">
   <div class="row">
-    <div class="column">
-      <p>
-        Price:{{ itemDetails.price }}
-      </p>
-      <p>
-        {{ itemDetails.category }}
-      </p>
+    <p>Category:</p>
+    <mat-card style="width: 130px;margin-left: 10px;background-color: #edebec;color: #1696a6;">
+      <p style="font-weight: bold;font-size: 16px;">{{ itemDetails.category }}</p>
+    </mat-card>
+  </div>
+  <div class="row">
+    <p>Price:</p>
+    <p class="prod-price">US ${{ itemDetails.price }}</p>
+  </div>
+  <div class="row" style="margin-bottom: 15px;">
+    <p style="margin-top: 10px;">Quantity:</p>
+    <input type="number" id="myNumber" value="1" style="margin-left: 19px;margin-bottom: 10px;">
+  </div>
+  <div class="row" style="justify-content: center;">
+    <mat-form-field>
+      <mat-select placeholder="Select Delivery">
+        <mat-option *ngFor="let delivery of deliveries" [value]="delivery.value">
+          {{delivery.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="row" style="justify-content: center;">
+    <button mat-raised-button color="primary" style="margin-right: 5px;" (click)="openSnackBar('This is a BigData Project ,We dont really sell Products.I can give you my account details,if you really want to buy it though :-)!' ,'dismiss')">Buy
+      Now</button>
+    <button mat-raised-button color="primary" (click)="openSnackBar('Added To Imaginary Cart!' ,'dismiss')">Add To Cart</button>
+  </div>
+  <div class="row" style="justify-content: center;">
+    <button mat-button color="accent" (click)="openSnackBar('Added To Imaginary WishList' ,'dismiss')">Add to Wish List</button>
+  </div>
+
+  <star-rating [rating]="itemDetails.stars" disabled="disabled" [starType]="'icon'" size="large" style=" width: 200px;"></star-rating>
+</div>
+<div class="review-container">
+  <h3>Reviews:</h3>
+  <div class="dialogbox" *ngFor="let review of itemDetails.reviews">
+    <div class="body">
+      <span class="tip tip-left"></span>
+      <div class="row">
+        <p>@{{review.name}}</p>
+        <p>-{{review.date}}</p>
+      </div>
+      <div class="message">
+        <span>{{review.comment}}</span> </div>
     </div>
   </div>
-</div>
-<div class="reviews">
-  <p>this is a review</p>
 </div>

@@ -3,11 +3,11 @@
     <mat-progress-bar mode="buffer"></mat-progress-bar>
   </div>
   <ul class="list-box">
-    <li class="list-item" *ngFor="let product of products" routerLink="['/product',hero.id]" routerLinkActive="active"
+    <li class="list-item" *ngFor="let product of products" routerLink="['/product',product.id]" routerLinkActive="active"
       (click)="gotoProductDetailsV2('/product',product.id)">
       <div class="item-image">
         <a>
-          <img src="//ae01.alicdn.com/kf/HTB1cPz2eXzqK1RjSZFoq6zfcXXaN.jpg_350x350.jpg" style="visibility: visible;">
+          <img src="assets/{{product.img_url}}" style="visibility: visible;">
         </a>
       </div>
       <div class="item-detail">
@@ -15,9 +15,9 @@
           <div>{{ product.title }}</div>
         </div>
         <div class="detail-price">US {{ product.price}}</div>
-        <div class="detail-discount">25% off</div>
+        <div class="detail-discount" *ngIf="product.stars === randomNumber">{{8*randomNumber}}% off</div>
         <div class="rating">
-          <star-rating [rating]="3" [starType]="'icon'"></star-rating>
+          <star-rating [rating]="product.stars" [starType]="'icon'"></star-rating>
         </div>
       </div>
     </li>

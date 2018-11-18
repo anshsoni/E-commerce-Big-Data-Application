@@ -51,10 +51,10 @@ img{
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
 }
-/* .home-container{
+.home-container{
     padding: 15px;
-    padding-top: 75px;
-} */
+    padding-top: 0px;
+}
 .rating{
     justify-content: normal;
 }

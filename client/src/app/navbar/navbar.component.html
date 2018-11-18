@@ -4,10 +4,10 @@
     <div class="col-xs-14 search-box-wrapper">
       <!-- <input autocomplete="off" name="keyword" type="text" class="searchformInput overlap" > -->
       <input type="search" class="searchformInput overlap" placeholder="Search products" aria-label="Number" matInput
-        [formControl]="myControl" [matAutocomplete]="auto">
+        [formControl]="myControl" [matAutocomplete]="auto" (keyup)="onKey($event)">
       <mat-autocomplete #auto="matAutocomplete">
-        <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-          {{option}}
+        <mat-option *ngFor="let option of filteredOptions | async" [value]="option.title" (click)="gotoProductDetailsV2('/product',option.id)">
+          {{option.title}}
         </mat-option>
       </mat-autocomplete>
 

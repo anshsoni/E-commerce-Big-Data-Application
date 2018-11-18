@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
 
   constructor(private homeConfigService: HomeConfigService, public router: Router) { }
   private products: any = [];
-
+  private randomNumber: number;
   showConfig() {
     this.homeConfigService.getAll()
       .subscribe((products: any) => {
@@ -19,6 +19,9 @@ export class HomeComponent implements OnInit {
         return this.products;
       });
   }
+  getRandomArbitrary(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+}
 
   public gotoProductDetailsV2(url, id) {
     const myurl = `${url}/${id}`;
@@ -34,6 +37,8 @@ export class HomeComponent implements OnInit {
   }
   ngOnInit() {
     this.showConfig();
+    this.randomNumber = this.getRandomArbitrary(1, 6);
+    console.log(this.randomNumber);
   }
 
 }
