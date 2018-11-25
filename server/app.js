@@ -3,6 +3,7 @@ const routes = require("./routes/route");
 const app = express();
 const elastic = routes.elastic;
 
+
 //Not efficient way ,but serves the purpose
 elastic.indices.delete({
   index: '_all'
