@@ -9,8 +9,8 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
 
   constructor(private homeConfigService: HomeConfigService, public router: Router) { }
-  private products: any = [];
-  private randomNumber: number;
+  public products: any = [];
+  public randomNumber: number;
   showConfig() {
     this.homeConfigService.getAll()
       .subscribe((products: any) => {

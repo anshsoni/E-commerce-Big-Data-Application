@@ -13,9 +13,10 @@ category:String,
 img_url:String,
 price: Number,
 reviews : Array
-});
+}, 
+{ collection : 'products_new' });
 // use mogoose.model to create a copy of schema for crud operations in node
-const Product=mongoose.model('products',ModelSchema);
+const Product=mongoose.model('products_new',ModelSchema);
 
 
   console.log(`this is models.js`);

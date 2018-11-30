@@ -1,5 +1,5 @@
 <div class="home-container">
-  <div class="loader" *ngIf="!products?.length > 0">
+  <div class="loader" *ngIf="products?.length === 0">
     <mat-progress-bar mode="buffer"></mat-progress-bar>
   </div>
   <ul class="list-box">
@@ -7,7 +7,7 @@
       (click)="gotoProductDetailsV2('/product',product.id)">
       <div class="item-image">
         <a>
-          <img src="assets/{{product.img_url}}" style="visibility: visible;">
+          <img src="{{product.img_url}}" style="visibility: visible;">
         </a>
       </div>
       <div class="item-detail">

@@ -3,7 +3,9 @@ const express = require("express");
 const Product = require("../model/models");
 const router = express.Router();
 var redisClient = require('redis').createClient;
-var redis = redisClient(6379, 'localhost');
+var redis = redisClient(6380, 'bigdataproject.redis.cache.windows.net',
+{auth_pass: 'tAVm+ssRLYAkLCt1OeJ16bECRxYYTsD5rESjN++cbMk=',
+    tls: {servername: 'bigdataproject.redis.cache.windows.net'}});
 
 let bulk = [];
 Product.find({}, function (err, data) {

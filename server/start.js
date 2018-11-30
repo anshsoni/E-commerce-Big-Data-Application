@@ -19,7 +19,7 @@ console.log(`this is start.js`);
 
 
 const client = new elasticsearch.Client({
-   hosts: [ 'http://localhost:9200']
+   hosts: [ 'https://elastic:NVUxmGxuT9VTW46Wsavv57Fr@2f4920c33362446ebd5ef8e6b5302535.us-east-1.aws.found.io:9243']
 });
 
 client.ping({

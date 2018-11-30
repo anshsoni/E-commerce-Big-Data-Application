@@ -14,7 +14,7 @@ export class ProductsComponent implements OnInit {
     {value: 'Two-Days', viewValue: '2 Days'}
   ];
   constructor(private route: ActivatedRoute, private homeConfigService: HomeConfigService , public snackBar: MatSnackBar) { }
-  private itemDetails: any = [];
+  itemDetails: any = [];
   getDetails(id: any) {
     console.log(id);
     this.homeConfigService.getEachItem(id)
